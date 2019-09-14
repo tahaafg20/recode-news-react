@@ -88,59 +88,59 @@ class App extends React.Component {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
+                  <li className="nav-item">
+                    <a
+                      className="nav-item nav-link"
+                      id="nav-home-tab"
+                      data-toggle="tab"
+                      onClick={this.handleClickUs}
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                    Top Headlines From United States
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-item nav-link "
+                    id="nav-profile-tab"
+                    data-toggle="tab"
+                    onClick={this.handleClickSg}
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Top Headlines From Singapore
+                </a>
+              </li>
               <li className="nav-item">
-              <a
-                className="nav-item nav-link"
-                id="nav-home-tab"
-                data-toggle="tab"
-                onClick={this.handleClickUs}
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
-              >
-                Top Headlines From United States
-          </a>
-          </li>
-          <li className="nav-item">
-              <a
-                className="nav-item nav-link "
-                id="nav-profile-tab"
-                data-toggle="tab"
-                onClick={this.handleClickSg}
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-              >
-                Top Headlines From Singapore
-          </a>
-          </li>
-          <li className="nav-item">
-              <a
-                className="nav-item nav-link"
-                id="nav-contact-tab"
-                data-toggle="tab"
-                onClick={this.handleClickCa}
-                role="tab"
-                aria-controls="nav-contact"
-                aria-selected="false"
-              >
-                Top Headlines From Canada
-          </a>
-          </li>
-          <li className="nav-item">
-            <a
-                className="nav-item nav-link"
-                id="nav-contact-tab"
-                data-toggle="tab"
-                onClick={this.handleClickMy}
-                role="tab"
-                aria-controls="nav-message"
-                aria-selected="false"
-              >
-                Top Headlines From Malaysia
-          </a>
-          </li>
+                  <a
+                    className="nav-item nav-link"
+                    id="nav-contact-tab"
+                    data-toggle="tab"
+                    onClick={this.handleClickCa}
+                    role="tab"
+                    aria-controls="nav-contact"
+                    aria-selected="false"
+                  >
+                    Top Headlines From Canada
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                    className="nav-item nav-link"
+                    id="nav-contact-tab"
+                    data-toggle="tab"
+                    onClick={this.handleClickMy}
+                    role="tab"
+                    aria-controls="nav-message"
+                    aria-selected="false"
+                  >
+                    Top Headlines From Malaysia
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
