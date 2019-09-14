@@ -78,57 +78,70 @@ class App extends React.Component {
 
       {/* rendering the navbar */}
 
-    <nav>
-        <div className='container text-left'>
+      <div className='container text-left'>
           <div className='container row'>
             <div className='square-yellow'></div><h5>REALBOX</h5></div>
         </div>
-      <br/>
-        <div className="container nav nav-tabs" id="nav-tab" role="tablist">
-          <a
-            className="nav-item nav-link active"
-            id="nav-home-tab"
-            data-toggle="tab"
-            onClick={this.handleClickUs}
-            role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
-            >
-            Top Headlines From United States
+        <nav class="container navbar navbar-expand-lg navbar-light faded">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav">
+              <li className="nav-item">
+              <a
+                className="nav-item nav-link"
+                id="nav-home-tab"
+                data-toggle="tab"
+                onClick={this.handleClickUs}
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Top Headlines From United States
           </a>
-          <a
-            className="nav-item nav-link "
-            id="nav-profile-tab"
-            data-toggle="tab"
-            onClick={this.handleClickSg}
-            role="tab"
-            aria-controls="nav-profile"
-            aria-selected="false"
-          >
-            Top Headlines From Singapore
+          </li>
+          <li className="nav-item">
+              <a
+                className="nav-item nav-link "
+                id="nav-profile-tab"
+                data-toggle="tab"
+                onClick={this.handleClickSg}
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Top Headlines From Singapore
           </a>
-          <a
-            className="nav-item nav-link"
-            id="nav-contact-tab"
-            data-toggle="tab"
-            onClick={this.handleClickCa}
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-          >
-            Top Headlines From Canada
+          </li>
+          <li className="nav-item">
+              <a
+                className="nav-item nav-link"
+                id="nav-contact-tab"
+                data-toggle="tab"
+                onClick={this.handleClickCa}
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                Top Headlines From Canada
           </a>
-          <a
-            className="nav-item nav-link"
-            id="nav-contact-tab"
-            data-toggle="tab"
-            onClick={this.handleClickMy}
-            role="tab"
-            aria-controls="nav-message"
-            aria-selected="false"
-          >
-            Top Headlines From Malaysia
+          </li>
+          <li className="nav-item">
+            <a
+                className="nav-item nav-link"
+                id="nav-contact-tab"
+                data-toggle="tab"
+                onClick={this.handleClickMy}
+                role="tab"
+                aria-controls="nav-message"
+                aria-selected="false"
+              >
+                Top Headlines From Malaysia
           </a>
+          </li>
+            </ul>
           </div>
         </nav>
         <br/>
